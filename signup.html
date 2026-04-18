@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="script.js"></script>
+<body>
+<form onsubmit="return validateForm()">
+
+<h1> The Healthy Palette Form!</h1>
+
+<label>What type of healthy meals do you like?</label>
+<select id="meal">
+<option value="">CHOOSE..</option>
+<option value="low">Low-Calorie Meals</option>
+<option value="hi">High-Protein Meals</option>
+<option value="bal">Balanced Diet Meals</option>
+<span id="mealErr"></span>
+</select>
+<br>
+
+<label>Which healthy food habits would you do to improve?</label>
+<input type="checkbox" name="fh" value="mor"> Eat More Vegetables
+<input type="checkbox" name="fh" value="less"> Eat Less Sweets
+<input type="checkbox" name="fh" value="hom"> Cook at Home
+<span id="habitErr"></span>
+<br>
+
+<label>How often do you eat healthy meals?</label>
+<input type="radio" name="eat" value="daily"> Daily
+<input type="radio" name="eat" value="som"> A Few Times
+<input type="radio" name="eat" value="rarely"> Rarely
+<span id="freqErr"></span>
+<br>
+
+<button type="submit">GET HEALTHY! 🍎</button> <br>
+<a href="https://marrri-beep.github.io/The-Healthy-Palette/">The Healthy Palette's Website!</a>
+<span id="message"></span>
+
+
+<style>
+
+body {
+  background-color: rgb(194, 238, 189);
+  font-family: Arial, sans-serif;
+}
+
+
+.col {
+  border-radius: 25px;
+  border: 3px solid black;
+  background-color: rgb(54, 54, 54);
+  margin: 40px auto;
+  width: 500px;
+  padding: 20px;
+}
+
+
+.fir {
+  padding: 15px;
+  border-radius: 25px;
+  background-color: white;
+}
+#fff {
+  color: rgb(167, 255, 157);
+  text-align: center;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid rgb(119, 217, 108);
+  margin-top: 5px;
+}
+
+button {
+  background-color: rgb(104, 190, 94);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(31, 116, 24);
+}
+
+span {
+  color: red;
+  font-size: 12px;
+  display: block;
+}
+
+a {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(31, 116, 24);
+}
+
+</style>
+
+
+</body>
+</html>
